@@ -152,6 +152,8 @@ print(" Data loaded successfully!\n")
 
 # 4. HUGGING FACE API SETUP
 
+from dotenv import load_dotenv
+load_dotenv()
 import os
 HF_API_KEY = os.getenv("HF_API_KEY")
 
