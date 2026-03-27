@@ -155,6 +155,7 @@ print(" Data loaded successfully!\n")
 from dotenv import load_dotenv
 load_dotenv()
 import os
+load_dotenv(os.path.join(os.path.dirname(__file__), '.env'))
 HF_API_KEY = os.getenv("HF_API_KEY")
 
 if not HF_API_KEY:
